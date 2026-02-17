@@ -1,4 +1,4 @@
-#🚦 Intelligent Traffic Management System Using Real-Time Data Analytics
+# 🚦 Intelligent Traffic Management System Using Real-Time Data Analytics
 Final Year Project — Computer Science
 
 Author: Muhammed Abdullahi
