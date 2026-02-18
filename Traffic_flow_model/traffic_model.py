@@ -1,15 +1,15 @@
 import streamlit as st
 import pandas as pd
 import joblib
-import os
+#import os
 import datetime
 
 # Load model
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+#BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-model = joblib.load(os.path.join(BASE_DIR, "traffic_model.pkl"))
+#model = joblib.load(os.path.join(BASE_DIR, "traffic_model.pkl"))
 
-#model = joblib.load("traffic_model.pkl")
+model = joblib.load("traffic_model.pkl")
 
 st.set_page_config(page_title="Intelligent Traffic Management System", layout="wide")
 
@@ -54,7 +54,7 @@ if st.sidebar.button("Predict Traffic"):
     elif prediction == "Normal":
         st.warning("⚠ Normal Traffic")
     else:
-        st.success("✅ Low Traffic")
+       st.success("✅ Low Traffic")
 
     st.write("### Prediction:", prediction)
 
