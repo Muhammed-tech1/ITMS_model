@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-#import os
+import os
 import datetime
 
 # Load model
@@ -9,7 +9,13 @@ import datetime
 
 #model = joblib.load(os.path.join(BASE_DIR, "traffic_model.pkl"))
 
-model = joblib.load("traffic_model.pkl")
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(BASE_DIR, "traffic_model.pkl")
+
+model = joblib.load(model_path)
+
+#model = joblib.load("traffic_model.pkl")
 
 st.set_page_config(page_title="Intelligent Traffic Management System", layout="wide")
 
