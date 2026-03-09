@@ -10,8 +10,18 @@ import datetime
 #model = joblib.load(os.path.join(BASE_DIR, "traffic_model.pkl"))
 
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+#BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+#model_path = os.path.join(BASE_DIR, "traffic_model.pkl")
+
+#model = joblib.load(model_path)
+
+
+BASE_DIR = os.getcwd()
+
+data_path = os.path.join(BASE_DIR, "Traffic.csv")
 model_path = os.path.join(BASE_DIR, "traffic_model.pkl")
+
+df = pd.read_csv(data_path)
 
 model = joblib.load(model_path)
 
