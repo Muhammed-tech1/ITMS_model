@@ -18,8 +18,8 @@ import datetime
 
 BASE_DIR = os.getcwd()
 
-data_path = os.path.join(BASE_DIR, "Traffic.csv")
-model_path = os.path.join(BASE_DIR, "traffic_model.pkl")
+data_path = os.path.join(BASE_DIR,  "Traffic_flow_model", "Traffic.csv")
+model_path = os.path.join(BASE_DIR,  "Traffic_flow_model", "Traffic.csv")
 
 df = pd.read_csv(data_path)
 
